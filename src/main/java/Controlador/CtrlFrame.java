@@ -8,6 +8,8 @@ import Modelo.TXTPedimentoConsultas;
 import Vista.PanelPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 
@@ -34,7 +36,7 @@ public class CtrlFrame implements ActionListener{
         frmPrincipal.cmbSeleccionarAñoValFraccion.removeAllItems();
         frmPrincipal.cmbSeleccionarAñoConsultarTXT.removeAllItems();
         
-        ArrayList<String> lista = modcPedimento.listarAño();
+        ArrayList<String> lista = modcFraccion.listarAño();
         
         for (int i = 0; i < lista.size(); i++) {
             frmPrincipal.cmbSeleccionarAñoValPedimentos.addItem(lista.get(i));
@@ -43,40 +45,14 @@ public class CtrlFrame implements ActionListener{
         }
     }
     
-    public void listarBimestre(){
-        
-        frmPrincipal.cmbSeleccionarBimestreValPed.removeAllItems();
-        frmPrincipal.cmbSeleccionarBimestreValFracciones.removeAllItems();
-        frmPrincipal.cmbSeleccionarBimestreConsultaTXT.removeAllItems();
-        
-        ArrayList<String> lista = modcFraccion.listarBimestre();
-        
-        
-        for (int i = 0; i < lista.size(); i++) {
-            frmPrincipal.cmbSeleccionarBimestreValPed.addItem(lista.get(i));
-            frmPrincipal.cmbSeleccionarBimestreValFracciones.addItem(lista.get(i));
-            frmPrincipal.cmbSeleccionarBimestreConsultaTXT.addItem(lista.get(i));
-        }
-    }
-    
-    public void listarRegimen(){
-        
-        frmPrincipal.cmbSeleccionarRegimenConsultaTXT.removeAllItems();
-        
-        ArrayList<String> lista = modcFraccion.listarRegimen();
-        
-        
-        for (int i = 0; i < lista.size(); i++) {
-            frmPrincipal.cmbSeleccionarRegimenConsultaTXT.addItem(lista.get(i));
-        }
-    }
-    
     public void run(){
         listarAño();
-        listarBimestre();
-        listarRegimen();
         frmPrincipal.setResizable(false);
         
+        frmPrincipal.cmbSeleccionarBimestreConsultaTXT.setSelectedItem("Selected");
+        frmPrincipal.cmbSeleccionarBimestreValFracciones.setSelectedItem("Selected");
+        frmPrincipal.cmbSeleccionarBimestreValPed.setSelectedItem("Selected");
+        frmPrincipal.cmbSeleccionarRegimenConsultaTXT.setSelectedItem("Selected");
         frmPrincipal.cmbFiltroValPedimGlosa.setVisible(false);
         frmPrincipal.cmbFiltroValPedimTXT.setVisible(false);
         frmPrincipal.cmbFiltrarValFracciones.setVisible(false);
@@ -97,6 +73,9 @@ public class CtrlFrame implements ActionListener{
         frmPrincipal.cmbTipoAgregarFraccion.setEnabled(false);
         DefaultTableModel tb = (DefaultTableModel) frmPrincipal.jtableConsultaTXT.getModel();
         tb.setRowCount(0);
+        frmPrincipal.btnLimpiarSaldos.setEnabled(false);
+        frmPrincipal.btnLimpiarValFracciones.setEnabled(false);
+        frmPrincipal.btnLimpiarValPedimentos.setEnabled(false);
         
         
         
@@ -114,6 +93,7 @@ public class CtrlFrame implements ActionListener{
             frmPrincipal.pnlValidaciones.setVisible(false);
         }
     }
+    
     
     public void limpiar() {
         frmPrincipal.txtIDFraccion.setText("");

@@ -61,12 +61,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
         cmbFiltrarValFracciones = new javax.swing.JComboBox<>();
         lblFiltrarValFraccion = new javax.swing.JLabel();
         lblFiltrarValFraccionAF = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        btnValidarSaldos = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jtableSaldos = new javax.swing.JTable();
-        cmbFiltrarSobredescargo = new javax.swing.JComboBox<>();
-        lblFiltrarValSaldosSD = new javax.swing.JLabel();
+        btnLimpiarValFracciones = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtableValidarPedimentosTXT = new javax.swing.JTable();
@@ -85,6 +80,14 @@ public class PanelPrincipal extends javax.swing.JFrame {
         cmbFiltroValPedimGlosa = new javax.swing.JComboBox<>();
         lblFiltrarValPedimentoTXT = new javax.swing.JLabel();
         cmbFiltroValPedimTXT = new javax.swing.JComboBox<>();
+        btnLimpiarValPedimentos = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        btnValidarSaldos = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtableSaldos = new javax.swing.JTable();
+        cmbFiltrarSobredescargo = new javax.swing.JComboBox<>();
+        lblFiltrarValSaldosSD = new javax.swing.JLabel();
+        btnLimpiarSaldos = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
@@ -99,47 +102,47 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
+        txtRTB2 = new javax.swing.JTextField();
+        txtRTB3 = new javax.swing.JTextField();
+        txtRTB4 = new javax.swing.JTextField();
+        txtRTB1 = new javax.swing.JTextField();
+        txtRTB5 = new javax.swing.JTextField();
+        txtRTB6 = new javax.swing.JTextField();
+        txtV5B1 = new javax.swing.JTextField();
+        txtV5B2 = new javax.swing.JTextField();
+        txtV5B3 = new javax.swing.JTextField();
+        txtV5B4 = new javax.swing.JTextField();
+        txtV5B5 = new javax.swing.JTextField();
+        txtV5B6 = new javax.swing.JTextField();
+        txtV1B1 = new javax.swing.JTextField();
+        txtV1B2 = new javax.swing.JTextField();
+        txtV1B5 = new javax.swing.JTextField();
+        txtV1B6 = new javax.swing.JTextField();
+        txtV1B3 = new javax.swing.JTextField();
+        txtV1B4 = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
-        jTextField34 = new javax.swing.JTextField();
-        jTextField35 = new javax.swing.JTextField();
-        jTextField36 = new javax.swing.JTextField();
-        jTextField37 = new javax.swing.JTextField();
-        jTextField38 = new javax.swing.JTextField();
-        jTextField39 = new javax.swing.JTextField();
-        jTextField40 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
+        txtRTB1TXT = new javax.swing.JTextField();
+        txtV1B1TXT = new javax.swing.JTextField();
+        txtV5B1TXT = new javax.swing.JTextField();
+        txtRTB2TXT = new javax.swing.JTextField();
+        txtV1B2TXT = new javax.swing.JTextField();
+        txtV5B2TXT = new javax.swing.JTextField();
+        txtRTB3TXT = new javax.swing.JTextField();
+        txtV1B3TXT = new javax.swing.JTextField();
+        txtV5B3TXT = new javax.swing.JTextField();
+        txtRTB4TXT = new javax.swing.JTextField();
+        txtV1B4TXT = new javax.swing.JTextField();
+        txtV5B4TXT = new javax.swing.JTextField();
+        txtRTB5TXT = new javax.swing.JTextField();
+        txtV1B5TXT = new javax.swing.JTextField();
+        txtV5B5TXT = new javax.swing.JTextField();
+        txtRTB6TXT = new javax.swing.JTextField();
+        txtV1B6TXT = new javax.swing.JTextField();
+        txtV5B6TXT = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
@@ -162,6 +165,8 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jTextField58 = new javax.swing.JTextField();
         jTextField59 = new javax.swing.JTextField();
         jTextField60 = new javax.swing.JTextField();
+        btnCalcularValorExpo = new javax.swing.JButton();
+        cmbSeleccionarAñoValorExpo = new javax.swing.JComboBox<>();
         pnlRegistroTXT = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -335,8 +340,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
             .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 896, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE)
@@ -363,7 +367,10 @@ public class PanelPrincipal extends javax.swing.JFrame {
                                 .addComponent(btnLock, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel11Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(btnNuevoRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(btnNuevoRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 896, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -399,9 +406,9 @@ public class PanelPrincipal extends javax.swing.JFrame {
                                     .addComponent(jLabel23)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(cmbSeleccionarRegimenConsultaTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 36, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -425,8 +432,8 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         pnlValidaciones.addTab("Insertar TXT", jPanel2);
@@ -434,19 +441,22 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setMinimumSize(new java.awt.Dimension(955, 640));
         jPanel6.setPreferredSize(new java.awt.Dimension(955, 640));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jtableValidarFracciones.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6"
             }
         ));
         jScrollPane3.setViewportView(jtableValidarFracciones);
+
+        jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 231, 921, 330));
 
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -507,12 +517,15 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel6.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(247, 11, -1, -1));
+
         cmbFiltrarValFraccionesAF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "No es fraccion AF", "Es fraccion AF", "Fraccion AF e IN", "Fraccion AF, IN y V1" }));
         cmbFiltrarValFraccionesAF.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cmbFiltrarValFraccionesAFItemStateChanged(evt);
             }
         });
+        jPanel6.add(cmbFiltrarValFraccionesAF, new org.netbeans.lib.awtextra.AbsoluteConstraints(658, 198, 116, -1));
 
         cmbFiltrarValFracciones.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Fraccion nueva", "Fraccion antigua", "No encontrada" }));
         cmbFiltrarValFracciones.addItemListener(new java.awt.event.ItemListener() {
@@ -520,131 +533,31 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 cmbFiltrarValFraccionesItemStateChanged(evt);
             }
         });
+        jPanel6.add(cmbFiltrarValFracciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 198, 116, -1));
 
         lblFiltrarValFraccion.setText("Filtrar validacion fraccion");
+        jPanel6.add(lblFiltrarValFraccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 178, -1, -1));
 
         lblFiltrarValFraccionAF.setText("Filtrar validacion AF");
+        jPanel6.add(lblFiltrarValFraccionAF, new org.netbeans.lib.awtextra.AbsoluteConstraints(658, 178, 113, -1));
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(247, 247, 247)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 804, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(397, 397, 397)
-                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(lblFiltrarValFraccion)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lblFiltrarValFraccionAF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jPanel6Layout.createSequentialGroup()
-                                        .addComponent(cmbFiltrarValFracciones, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(cmbFiltrarValFraccionesAF, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(117, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblFiltrarValFraccion)
-                    .addComponent(lblFiltrarValFraccionAF))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmbFiltrarValFraccionesAF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbFiltrarValFracciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
-        );
+        btnLimpiarValFracciones.setBackground(new java.awt.Color(218, 217, 215));
+        btnLimpiarValFracciones.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 12)); // NOI18N
+        btnLimpiarValFracciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/clear.png"))); // NOI18N
+        btnLimpiarValFracciones.setText(" LIMPIAR");
+        btnLimpiarValFracciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLimpiarValFracciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarValFraccionesActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btnLimpiarValFracciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(838, 194, 128, -1));
 
         pnlValidaciones.addTab("Validacion fracciones", jPanel6);
-
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setMinimumSize(new java.awt.Dimension(955, 640));
-        jPanel3.setPreferredSize(new java.awt.Dimension(955, 640));
-
-        btnValidarSaldos.setBackground(new java.awt.Color(218, 217, 215));
-        btnValidarSaldos.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
-        btnValidarSaldos.setText("VALIDAR SALDOS");
-        btnValidarSaldos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnValidarSaldos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnValidarSaldosActionPerformed(evt);
-            }
-        });
-
-        jtableSaldos.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jtableSaldos);
-
-        cmbFiltrarSobredescargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "SI", "NO" }));
-        cmbFiltrarSobredescargo.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cmbFiltrarSobredescargoItemStateChanged(evt);
-            }
-        });
-
-        lblFiltrarValSaldosSD.setText("Filtrar sobredescargo");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(70, 70, 70)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnValidarSaldos, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(147, 147, 147)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cmbFiltrarSobredescargo, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblFiltrarValSaldosSD))
-                        .addGap(11, 11, 11))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(148, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblFiltrarValSaldosSD)
-                    .addComponent(btnValidarSaldos, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cmbFiltrarSobredescargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(125, Short.MAX_VALUE))
-        );
-
-        pnlValidaciones.addTab("Validacion saldos", jPanel3);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setMinimumSize(new java.awt.Dimension(955, 640));
         jPanel5.setPreferredSize(new java.awt.Dimension(955, 640));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jtableValidarPedimentosTXT.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -659,8 +572,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(jtableValidarPedimentosTXT);
 
-        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 215, 477, 342));
-
         jtableValidarPedimentosGlosa.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -673,8 +584,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
             }
         ));
         jScrollPane4.setViewportView(jtableValidarPedimentosGlosa);
-
-        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 215, 488, 342));
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -735,18 +644,13 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel5.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(248, 11, -1, -1));
-
         jLabel6.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
         jLabel6.setText("TXT VS GLOSA");
-        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
         jLabel7.setText("GLOSA VS TXT");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 190, -1, -1));
 
         lblFiltrarValPedimentoGlosa.setText("Filtrar");
-        jPanel5.add(lblFiltrarValPedimentoGlosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 170, 40, -1));
 
         cmbFiltroValPedimGlosa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Encontrado", "No encontrado" }));
         cmbFiltroValPedimGlosa.addItemListener(new java.awt.event.ItemListener() {
@@ -754,10 +658,8 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 cmbFiltroValPedimGlosaItemStateChanged(evt);
             }
         });
-        jPanel5.add(cmbFiltroValPedimGlosa, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 190, -1, -1));
 
         lblFiltrarValPedimentoTXT.setText("Filtrar");
-        jPanel5.add(lblFiltrarValPedimentoTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 40, -1));
 
         cmbFiltroValPedimTXT.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Encontrado", "No encontrado" }));
         cmbFiltroValPedimTXT.addItemListener(new java.awt.event.ItemListener() {
@@ -765,9 +667,125 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 cmbFiltroValPedimTXTItemStateChanged(evt);
             }
         });
-        jPanel5.add(cmbFiltroValPedimTXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, -1, -1));
+
+        btnLimpiarValPedimentos.setBackground(new java.awt.Color(218, 217, 215));
+        btnLimpiarValPedimentos.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 12)); // NOI18N
+        btnLimpiarValPedimentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/clear.png"))); // NOI18N
+        btnLimpiarValPedimentos.setText("LIMPIAR");
+        btnLimpiarValPedimentos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLimpiarValPedimentos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarValPedimentosActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(248, 248, 248)
+                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnLimpiarValPedimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(380, 380, 380)
+                        .addComponent(lblFiltrarValPedimentoTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(450, 450, 450)
+                        .addComponent(lblFiltrarValPedimentoGlosa, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(jLabel6)
+                        .addGap(155, 155, 155)
+                        .addComponent(cmbFiltroValPedimTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabel7)
+                        .addGap(155, 155, 155)
+                        .addComponent(cmbFiltroValPedimGlosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLimpiarValPedimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblFiltrarValPedimentoTXT)
+                    .addComponent(lblFiltrarValPedimentoGlosa))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(cmbFiltroValPedimTXT, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7)
+                    .addComponent(cmbFiltroValPedimGlosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(5, 5, 5)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
 
         pnlValidaciones.addTab("Validacion pedimentos", jPanel5);
+
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setMinimumSize(new java.awt.Dimension(955, 640));
+        jPanel3.setPreferredSize(new java.awt.Dimension(955, 640));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnValidarSaldos.setBackground(new java.awt.Color(218, 217, 215));
+        btnValidarSaldos.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 14)); // NOI18N
+        btnValidarSaldos.setText("VALIDAR SALDOS");
+        btnValidarSaldos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel3.add(btnValidarSaldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, 203, 33));
+
+        jtableSaldos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jtableSaldos);
+
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 147, 920, 410));
+
+        cmbFiltrarSobredescargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "SI", "NO" }));
+        cmbFiltrarSobredescargo.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cmbFiltrarSobredescargoItemStateChanged(evt);
+            }
+        });
+        jPanel3.add(cmbFiltrarSobredescargo, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 141, -1));
+
+        lblFiltrarValSaldosSD.setText("Filtrar sobredescargo");
+        jPanel3.add(lblFiltrarValSaldosSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 100, -1, -1));
+
+        btnLimpiarSaldos.setBackground(new java.awt.Color(218, 217, 215));
+        btnLimpiarSaldos.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 12)); // NOI18N
+        btnLimpiarSaldos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/clear.png"))); // NOI18N
+        btnLimpiarSaldos.setText("LIMPIAR");
+        btnLimpiarSaldos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLimpiarSaldos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarSaldosActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnLimpiarSaldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 140, 30));
+
+        pnlValidaciones.addTab("Validacion saldos", jPanel3);
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
         jPanel9.setMinimumSize(new java.awt.Dimension(955, 640));
@@ -838,77 +856,77 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jLabel36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 100, 40));
 
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 50));
+        txtRTB2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 100, 50));
 
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 100, 50));
+        txtRTB3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 100, 50));
 
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 100, 50));
+        txtRTB4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 100, 50));
 
-        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 100, 50));
+        txtRTB1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, 100, 50));
 
-        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 100, 50));
+        txtRTB5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, 100, 50));
 
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 100, 50));
+        txtRTB6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 100, 50));
 
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 100, 50));
+        txtV5B1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, 100, 50));
 
-        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 100, 50));
+        txtV5B2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, 100, 50));
 
-        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 100, 50));
+        txtV5B3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 100, 50));
 
-        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 100, 50));
+        txtV5B4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, 100, 50));
 
-        jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField17.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 100, 50));
+        txtV5B5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 100, 50));
 
-        jTextField18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 100, 50));
+        txtV5B6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 100, 50));
 
-        jTextField19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 100, 50));
+        txtV1B1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 100, 50));
 
-        jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 100, 50));
+        txtV1B2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 100, 50));
 
-        jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 100, 50));
+        txtV1B5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 100, 50));
 
-        jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 100, 50));
+        txtV1B6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 100, 50));
 
-        jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 100, 50));
+        txtV1B3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 100, 50));
 
-        jTextField24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 100, 50));
+        txtV1B4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 100, 50));
 
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel31.setText("VALOR COMERCIAL");
@@ -935,77 +953,77 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jLabel40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, 100, 40));
 
-        jTextField25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 100, 50));
+        txtRTB1TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB1TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB1TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 100, 50));
 
-        jTextField26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 100, 50));
+        txtV1B1TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B1TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B1TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 100, 50));
 
-        jTextField27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 110, 100, 50));
+        txtV5B1TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B1TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B1TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 110, 100, 50));
 
-        jTextField28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 100, 50));
+        txtRTB2TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB2TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB2TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 100, 50));
 
-        jTextField29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 100, 50));
+        txtV1B2TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B2TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B2TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 100, 50));
 
-        jTextField30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField30.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, 100, 50));
+        txtV5B2TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B2TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B2TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, 100, 50));
 
-        jTextField31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField31.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 100, 50));
+        txtRTB3TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB3TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB3TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 100, 50));
 
-        jTextField32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 210, 100, 50));
+        txtV1B3TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B3TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B3TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 210, 100, 50));
 
-        jTextField33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, 100, 50));
+        txtV5B3TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B3TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B3TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, 100, 50));
 
-        jTextField34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField34, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, 100, 50));
+        txtRTB4TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB4TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB4TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, 100, 50));
 
-        jTextField35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField35, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 100, 50));
+        txtV1B4TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B4TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B4TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 260, 100, 50));
 
-        jTextField36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField36, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 100, 50));
+        txtV5B4TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B4TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B4TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 100, 50));
 
-        jTextField37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField37.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 100, 50));
+        txtRTB5TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB5TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB5TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 100, 50));
 
-        jTextField38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField38.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField38, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 100, 50));
+        txtV1B5TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B5TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B5TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 100, 50));
 
-        jTextField39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField39, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 100, 50));
+        txtV5B5TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B5TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B5TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 310, 100, 50));
 
-        jTextField40.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField40, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 100, 50));
+        txtRTB6TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtRTB6TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtRTB6TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 100, 50));
 
-        jTextField41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField41, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 100, 50));
+        txtV1B6TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV1B6TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV1B6TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 100, 50));
 
-        jTextField42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField42, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 100, 50));
+        txtV5B6TXT.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtV5B6TXT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtV5B6TXT, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 100, 50));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("VALOR COMERCIAL");
@@ -1099,18 +1117,33 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jTextField60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jTextField60, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 360, 100, 50));
 
+        btnCalcularValorExpo.setText("Calcular valor expo");
+
+        cmbSeleccionarAñoValorExpo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "2020", "2021", "2022" }));
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                .addGap(210, 210, 210)
+                .addComponent(cmbSeleccionarAñoValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCalcularValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(301, 301, 301))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
-                .addGap(108, 108, 108)
+                .addGap(29, 29, 29)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCalcularValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbSeleccionarAñoValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -1167,7 +1200,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
 
         cmbTipoAgregarFraccion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selected", "03", "04" }));
 
-        cmbSeleccionarRegimenAgregarFraccion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selected", "RT", "V1", "V5", "F5", "A3" }));
+        cmbSeleccionarRegimenAgregarFraccion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selected", "RT", "V1", "V5", "F5", "F4", "A3" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1379,12 +1412,56 @@ public class PanelPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbFiltrarSobredescargoItemStateChanged
 
     private void btnSeleccionarTXTInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeleccionarTXTInsertarActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btnSeleccionarTXTInsertarActionPerformed
 
-    private void btnValidarSaldosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnValidarSaldosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnValidarSaldosActionPerformed
+    private void btnLimpiarValFraccionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarValFraccionesActionPerformed
+        cmbFiltrarValFracciones.setSelectedItem("Seleccionar");
+        cmbFiltrarValFraccionesAF.setSelectedItem("Seleccionar");
+        DefaultTableModel tb = (DefaultTableModel) jtableValidarFracciones.getModel();
+        tb.setRowCount(0);
+        cmbSeleccionarAñoValFraccion.setSelectedItem("Seleccionar");
+        cmbSeleccionarBimestreValFracciones.setSelectedItem("Seleccionar");
+        cmbFiltrarValFracciones.setVisible(false);
+        cmbFiltrarValFraccionesAF.setVisible(false);
+        lblFiltrarValFraccion.setVisible(false);
+        lblFiltrarValFraccionAF.setVisible(false);
+        btnLimpiarValFracciones.setEnabled(false);
+        btnValidarFracciones.setEnabled(true);
+        cmbSeleccionarAñoValFraccion.setEnabled(true);
+        cmbSeleccionarBimestreValFracciones.setEnabled(true);
+    }//GEN-LAST:event_btnLimpiarValFraccionesActionPerformed
+
+    private void btnLimpiarValPedimentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarValPedimentosActionPerformed
+
+        cmbFiltroValPedimTXT.setSelectedItem("Seleccionar");
+        cmbFiltroValPedimGlosa.setSelectedItem("Seleccionar");
+        DefaultTableModel tbG = (DefaultTableModel) jtableValidarPedimentosGlosa.getModel();
+        tbG.setRowCount(0);
+        DefaultTableModel tbT = (DefaultTableModel) jtableValidarPedimentosTXT.getModel();
+        tbT.setRowCount(0);
+        cmbSeleccionarAñoValPedimentos.setSelectedItem("Seleccionar");
+        cmbSeleccionarBimestreValPed.setSelectedItem("Seleccionar");
+        cmbFiltroValPedimTXT.setVisible(false);
+        cmbFiltroValPedimGlosa.setVisible(false);
+        lblFiltrarValPedimentoTXT.setVisible(false);
+        lblFiltrarValPedimentoGlosa.setVisible(false);
+        btnLimpiarValPedimentos.setEnabled(false);
+        btnLimpiarSaldos.setEnabled(false);
+        cmbSeleccionarAñoValPedimentos.setEnabled(true);
+        cmbSeleccionarBimestreValPed.setEnabled(true);
+        btnValidarPedimentos.setEnabled(true);
+        
+    }//GEN-LAST:event_btnLimpiarValPedimentosActionPerformed
+
+    private void btnLimpiarSaldosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarSaldosActionPerformed
+        DefaultTableModel tb = (DefaultTableModel) jtableSaldos.getModel();
+        tb.setRowCount(0);
+        cmbFiltrarSobredescargo.setSelectedItem("Seleccionar");
+        cmbFiltrarSobredescargo.setVisible(false);
+        lblFiltrarValSaldosSD.setVisible(false);
+        btnValidarSaldos.setEnabled(true);
+    }//GEN-LAST:event_btnLimpiarSaldosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1423,13 +1500,17 @@ public class PanelPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnBack;
+    public javax.swing.JButton btnCalcularValorExpo;
     public javax.swing.JButton btnCancelarRegistroTxt;
     public javax.swing.JButton btnEliminarRegistroTxt;
     public javax.swing.JButton btnEliminarTXT;
     public javax.swing.JButton btnExportarTXT;
     public javax.swing.JButton btnFiltrarTXT;
     public javax.swing.JButton btnGuardarRegistroTXT;
+    public javax.swing.JButton btnLimpiarSaldos;
     public javax.swing.JButton btnLimpiarTXT;
+    public javax.swing.JButton btnLimpiarValFracciones;
+    public javax.swing.JButton btnLimpiarValPedimentos;
     public javax.swing.JButton btnLock;
     public javax.swing.JButton btnNuevoRegistro;
     public javax.swing.JButton btnSeleccionarTXTInsertar;
@@ -1444,6 +1525,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> cmbSeleccionarAñoConsultarTXT;
     public javax.swing.JComboBox<String> cmbSeleccionarAñoValFraccion;
     public javax.swing.JComboBox<String> cmbSeleccionarAñoValPedimentos;
+    public javax.swing.JComboBox<String> cmbSeleccionarAñoValorExpo;
     public javax.swing.JComboBox<String> cmbSeleccionarBimestreConsultaTXT;
     public javax.swing.JComboBox<String> cmbSeleccionarBimestreRegistro;
     public javax.swing.JComboBox<String> cmbSeleccionarBimestreValFracciones;
@@ -1513,39 +1595,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
-    private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField40;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
     private javax.swing.JTextField jTextField43;
     private javax.swing.JTextField jTextField44;
     private javax.swing.JTextField jTextField45;
@@ -1553,7 +1602,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField47;
     private javax.swing.JTextField jTextField48;
     private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField50;
     private javax.swing.JTextField jTextField51;
     private javax.swing.JTextField jTextField52;
@@ -1564,9 +1612,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField57;
     private javax.swing.JTextField jTextField58;
     private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField60;
-    private javax.swing.JTextField jTextField7;
     public javax.swing.JTable jtableConsultaTXT;
     public javax.swing.JTable jtableSaldos;
     public javax.swing.JTable jtableValidarFracciones;
@@ -1585,7 +1631,43 @@ public class PanelPrincipal extends javax.swing.JFrame {
     public javax.swing.JTextField txtFraccion;
     public javax.swing.JTextField txtIDFraccion;
     public javax.swing.JTextField txtNombreArchivo;
+    public javax.swing.JTextField txtRTB1;
+    public javax.swing.JTextField txtRTB1TXT;
+    public javax.swing.JTextField txtRTB2;
+    public javax.swing.JTextField txtRTB2TXT;
+    public javax.swing.JTextField txtRTB3;
+    public javax.swing.JTextField txtRTB3TXT;
+    public javax.swing.JTextField txtRTB4;
+    public javax.swing.JTextField txtRTB4TXT;
+    public javax.swing.JTextField txtRTB5;
+    public javax.swing.JTextField txtRTB5TXT;
+    public javax.swing.JTextField txtRTB6;
+    public javax.swing.JTextField txtRTB6TXT;
     public javax.swing.JTextField txtTipoMaterial;
+    public javax.swing.JTextField txtV1B1;
+    public javax.swing.JTextField txtV1B1TXT;
+    public javax.swing.JTextField txtV1B2;
+    public javax.swing.JTextField txtV1B2TXT;
+    public javax.swing.JTextField txtV1B3;
+    public javax.swing.JTextField txtV1B3TXT;
+    public javax.swing.JTextField txtV1B4;
+    public javax.swing.JTextField txtV1B4TXT;
+    public javax.swing.JTextField txtV1B5;
+    public javax.swing.JTextField txtV1B5TXT;
+    public javax.swing.JTextField txtV1B6;
+    public javax.swing.JTextField txtV1B6TXT;
+    public javax.swing.JTextField txtV5B1;
+    public javax.swing.JTextField txtV5B1TXT;
+    public javax.swing.JTextField txtV5B2;
+    public javax.swing.JTextField txtV5B2TXT;
+    public javax.swing.JTextField txtV5B3;
+    public javax.swing.JTextField txtV5B3TXT;
+    public javax.swing.JTextField txtV5B4;
+    public javax.swing.JTextField txtV5B4TXT;
+    public javax.swing.JTextField txtV5B5;
+    public javax.swing.JTextField txtV5B5TXT;
+    public javax.swing.JTextField txtV5B6;
+    public javax.swing.JTextField txtV5B6TXT;
     public javax.swing.JTextField txtValidado;
     public javax.swing.JTextField txtValor;
     // End of variables declaration//GEN-END:variables

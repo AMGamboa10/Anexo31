@@ -385,7 +385,7 @@ public class TXTFraccionConsultas extends Conexion  {
                             }
                         }
                     }
-
+                    
                     VFraccion vFraccion = new VFraccion(fraccion, regimenExpo, tipoMaterial, valFraccion, valAF, primeraImpo);
                     lista.add(vFraccion);
                 }
@@ -533,7 +533,7 @@ public class TXTFraccionConsultas extends Conexion  {
     
     public ArrayList buscarTXT(TXTFraccion txtF){
         PreparedStatement ps = null;
-        ResultSet rs = null;        
+        ResultSet rs = null;       
         Connection con = getConexion();
         
         String tipo, fraccion, tipoMaterial, regimen, bimestre;
@@ -677,12 +677,12 @@ public class TXTFraccionConsultas extends Conexion  {
         return lista;
     }
     
-    public ArrayList listarBimestre(){
+    public ArrayList listarBimestre(TXTFraccion txtF){
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = getConexion();
         
-        String sql = "Select bimestre from txtfraccion group by bimestre order by bimestre ASC";
+        String sql = "Select bimestre from txtfraccion where año = ? group by bimestre order by bimestre ASC";
         
         //Creamos nuestro array
         ArrayList<String> lista = new ArrayList<String>();
@@ -690,9 +690,8 @@ public class TXTFraccionConsultas extends Conexion  {
         
         try {
             ps = con.prepareStatement(sql);
+            ps.setInt(1, txtF.getAño());
             rs = ps.executeQuery();
-            
-            
             
             while(rs.next()){
                 String bimestre = rs.getString("bimestre");
@@ -737,12 +736,12 @@ public class TXTFraccionConsultas extends Conexion  {
         return lista;
     }
     
-    public ArrayList listarRegimen(){
+    public ArrayList listarRegimen(TXTFraccion txtF){
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection con = getConexion();
         
-        String sql = "Select regimen from txtfraccion group by regimen";
+        String sql = "Select regimen from txtfraccion where bimestre = ? group by regimen";
         
         //Creamos nuestro array
         ArrayList<String> lista = new ArrayList<String>();
@@ -750,6 +749,8 @@ public class TXTFraccionConsultas extends Conexion  {
         
         try {
             ps = con.prepareStatement(sql);
+            ps.setString(1, txtF.getBimestre());
+            
             rs = ps.executeQuery();
             
             while(rs.next()){

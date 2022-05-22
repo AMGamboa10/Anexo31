@@ -10,6 +10,8 @@ import Modelo.TXTPedimentoConsultas;
 import Vista.PanelPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.MouseListener;
 import java.io.BufferedReader;
 import java.io.File;
@@ -31,7 +33,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
-public class CtrlTXT implements ActionListener, MouseListener {
+public class CtrlTXT implements ActionListener, MouseListener, ItemListener {
     private PanelPrincipal frmPrincipal;
     private TXTFraccion modFraccion;
     private TXTFraccionConsultas modcFraccion;
@@ -58,6 +60,12 @@ public class CtrlTXT implements ActionListener, MouseListener {
         this.frmPrincipal.btnEliminarRegistroTxt.addActionListener(this);
         this.frmPrincipal.btnGuardarRegistroTXT.addActionListener(this);
         this.frmPrincipal.btnCancelarRegistroTxt.addActionListener(this);
+        this.frmPrincipal.cmbSeleccionarAñoConsultarTXT.addItemListener(this);
+        this.frmPrincipal.cmbSeleccionarBimestreConsultaTXT.addItemListener(this);
+        this.frmPrincipal.cmbSeleccionarAñoValFraccion.addItemListener(this);
+        this.frmPrincipal.cmbSeleccionarBimestreValFracciones.addItemListener(this);
+        this.frmPrincipal.cmbSeleccionarAñoValPedimentos.addItemListener(this);
+        this.frmPrincipal.cmbSeleccionarBimestreValPed.addItemListener(this);
     }
 
     public void insertarTXT() {
@@ -340,12 +348,12 @@ public class CtrlTXT implements ActionListener, MouseListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        CtrlFrame ctrlFrame = new CtrlFrame();
+        
         if (e.getSource() == frmPrincipal.btnSeleccionarTXTInsertar) {
             insertarTXT();
             listarAño();
-            listarBimestre();
-            listarRegimen();
+            ctrlFrame.limpiar();
 
         }
         if (e.getSource() == frmPrincipal.btnExportarTXT) {
@@ -391,8 +399,7 @@ public class CtrlTXT implements ActionListener, MouseListener {
                         frmPrincipal.btnExportarTXT.setEnabled(false);
                         frmPrincipal.btnLock.setVisible(false);
                         listarAño();
-                        listarBimestre();
-                        listarRegimen();
+                        ctrlFrame.limpiar();
                         //Metodo para elimianr archivo TXT
                         eliminarTXTArchivoTXT();
 
@@ -409,6 +416,9 @@ public class CtrlTXT implements ActionListener, MouseListener {
             frmPrincipal.cmbSeleccionarAñoConsultarTXT.setEnabled(true);
             frmPrincipal.cmbSeleccionarBimestreConsultaTXT.setEnabled(true);
             frmPrincipal.cmbSeleccionarRegimenConsultaTXT.setEnabled(true);
+            frmPrincipal.cmbSeleccionarAñoConsultarTXT.setSelectedItem("Seleccionar");
+            frmPrincipal.cmbSeleccionarBimestreConsultaTXT.setSelectedItem("Seleccionar");
+            frmPrincipal.cmbSeleccionarRegimenConsultaTXT.setSelectedItem("Seleccionar");
             frmPrincipal.btnLimpiarTXT.setEnabled(false);
             frmPrincipal.btnEliminarTXT.setEnabled(false);
             frmPrincipal.btnExportarTXT.setEnabled(false);
@@ -622,31 +632,87 @@ public class CtrlTXT implements ActionListener, MouseListener {
         }
     }
     
-    public void listarBimestre(){
+    public ArrayList<String>listarBimestre(){
         
-        frmPrincipal.cmbSeleccionarBimestreValPed.removeAllItems();
-        frmPrincipal.cmbSeleccionarBimestreValFracciones.removeAllItems();
-        frmPrincipal.cmbSeleccionarBimestreConsultaTXT.removeAllItems();
+        ArrayList<String> lista = modcFraccion.listarBimestre(modFraccion);
         
-        ArrayList<String> lista = modcFraccion.listarBimestre();
-        
-        
-        for (int i = 0; i < lista.size(); i++) {
-            frmPrincipal.cmbSeleccionarBimestreValPed.addItem(lista.get(i));
-            frmPrincipal.cmbSeleccionarBimestreValFracciones.addItem(lista.get(i));
-            frmPrincipal.cmbSeleccionarBimestreConsultaTXT.addItem(lista.get(i));
-        }
+        return lista;
     }
     
     public void listarRegimen(){
         
         frmPrincipal.cmbSeleccionarRegimenConsultaTXT.removeAllItems();
         
-        ArrayList<String> lista = modcFraccion.listarRegimen();
+        ArrayList<String> lista = modcFraccion.listarRegimen(modFraccion);
         
         
         for (int i = 0; i < lista.size(); i++) {
             frmPrincipal.cmbSeleccionarRegimenConsultaTXT.addItem(lista.get(i));
+        }
+    }
+    
+
+    @Override
+    public void itemStateChanged(ItemEvent evCh) {
+        if (evCh.getSource() == frmPrincipal.cmbSeleccionarAñoConsultarTXT) {
+            
+            try {
+                ArrayList<String> listarBimestre = listarBimestre();
+                frmPrincipal.cmbSeleccionarBimestreConsultaTXT.removeAllItems();
+                modFraccion.setAño(Integer.parseInt(frmPrincipal.cmbSeleccionarAñoConsultarTXT.getSelectedItem().toString()));
+                for (int i = 0; i < listarBimestre.size(); i++) {
+                    frmPrincipal.cmbSeleccionarBimestreConsultaTXT.addItem(listarBimestre.get(i));
+                }
+            } catch (Exception e) {
+                frmPrincipal.cmbSeleccionarBimestreConsultaTXT.removeAllItems();
+                frmPrincipal.cmbSeleccionarBimestreConsultaTXT.addItem("Seleccionar");
+                frmPrincipal.cmbSeleccionarBimestreConsultaTXT.setSelectedItem("Seleccionar");
+            }
+        }
+        
+        if (evCh.getSource() == frmPrincipal.cmbSeleccionarBimestreConsultaTXT) {
+            try {
+                String bimestre = frmPrincipal.cmbSeleccionarBimestreConsultaTXT.getSelectedItem().toString().substring(3, 5);
+                if (!bimestre.equals(null)) {
+                    modFraccion.setBimestre(bimestre);
+                    listarRegimen();
+                }
+            } catch (Exception e) {
+                frmPrincipal.cmbSeleccionarRegimenConsultaTXT.removeAllItems();
+                frmPrincipal.cmbSeleccionarRegimenConsultaTXT.addItem("Seleccionar");
+                frmPrincipal.cmbSeleccionarRegimenConsultaTXT.setSelectedItem("Seleccionar");
+            }
+        }
+        
+        if (evCh.getSource() == frmPrincipal.cmbSeleccionarAñoValFraccion) {
+            try {
+                ArrayList<String> listarBimestre = listarBimestre();
+                frmPrincipal.cmbSeleccionarBimestreValFracciones.removeAllItems();
+                
+                modFraccion.setAño(Integer.parseInt(frmPrincipal.cmbSeleccionarAñoValFraccion.getSelectedItem().toString()));
+                for (int i = 0; i < listarBimestre.size(); i++) {
+                    frmPrincipal.cmbSeleccionarBimestreValFracciones.addItem(listarBimestre.get(i));
+                }
+            } catch (Exception e) {
+                frmPrincipal.cmbSeleccionarBimestreValFracciones.removeAllItems();
+                frmPrincipal.cmbSeleccionarBimestreValFracciones.addItem("Seleccionar");
+                frmPrincipal.cmbSeleccionarBimestreValFracciones.setSelectedItem("Seleccionar");
+            }
+        }
+        
+        if (evCh.getSource() == frmPrincipal.cmbSeleccionarAñoValPedimentos) {
+            try {
+                ArrayList<String> listarBimestre = listarBimestre();
+                frmPrincipal.cmbSeleccionarBimestreValPed.removeAllItems();
+                modFraccion.setAño(Integer.parseInt(frmPrincipal.cmbSeleccionarAñoValPedimentos.getSelectedItem().toString()));
+                for (int i = 0; i < listarBimestre.size(); i++) {
+                    frmPrincipal.cmbSeleccionarBimestreValPed.addItem(listarBimestre.get(i));
+                }
+            } catch (Exception e) {
+                frmPrincipal.cmbSeleccionarBimestreValPed.removeAllItems();
+                frmPrincipal.cmbSeleccionarBimestreValPed.addItem("Seleccionar");
+                frmPrincipal.cmbSeleccionarBimestreValPed.setSelectedItem("Seleccionar");
+            }
         }
     }
 

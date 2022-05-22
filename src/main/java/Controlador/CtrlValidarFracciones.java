@@ -69,6 +69,14 @@ public class CtrlValidarFracciones implements ActionListener{
             }else{
                 try {
                     llenarTablaValidacionFraccion();
+                    frmPrincipal.cmbFiltrarValFracciones.setSelectedItem("Fraccion antigua");
+                    frmPrincipal.cmbFiltrarValFraccionesAF.setSelectedItem("No es fraccion AF");
+                    frmPrincipal.cmbFiltrarValFracciones.setSelectedItem("Seleccionar");
+                    frmPrincipal.cmbFiltrarValFraccionesAF.setSelectedItem("Seleccionar");
+                    frmPrincipal.btnLimpiarValFracciones.setEnabled(true);
+                    frmPrincipal.btnValidarFracciones.setEnabled(false);
+                    frmPrincipal.cmbSeleccionarAñoValFraccion.setEnabled(false);
+                    frmPrincipal.cmbSeleccionarBimestreValFracciones.setEnabled(false);
                 } catch (ParseException ex) {
                     Logger.getLogger(CtrlValidarFracciones.class.getName()).log(Level.SEVERE, null, ex);
                 }

@@ -61,6 +61,8 @@ public class CtrlValidarSaldos implements ActionListener {
     public void actionPerformed(ActionEvent ev) {
         if (ev.getSource() == frmPrincipal.btnValidarSaldos) {
             llenarTablaValidacionSaldos();
+            frmPrincipal.btnLimpiarSaldos.setEnabled(true);
+            frmPrincipal.btnValidarSaldos.setEnabled(false);
         }
     }
 

@@ -5,6 +5,7 @@ import Controlador.CtrlTXT;
 import Controlador.CtrlValidarFracciones;
 import Controlador.CtrlValidarPedimentos;
 import Controlador.CtrlValidarSaldos;
+import Controlador.CtrlValorExpo;
 import Modelo.VPedimentoGlosa;
 import Modelo.VPedimentoTXT;
 import Modelo.TXTFraccion;
@@ -15,6 +16,8 @@ import Modelo.Saldos;
 import Modelo.TXTNombre;
 import Modelo.TXTNombreConsultas;
 import Modelo.VFraccion;
+import Modelo.ValorExportacion;
+import Modelo.ValorExportacionConsultas;
 import Vista.PanelPrincipal;
 
 public class Principal {
@@ -31,7 +34,10 @@ public class Principal {
         VPedimentoGlosa modPedimentoGlosa = new VPedimentoGlosa();
         VPedimentoTXT modPedimentoTXT = new VPedimentoTXT();
         VFraccion modVFraccion = new VFraccion();
+        ValorExportacion modValExpo = new ValorExportacion();
+        ValorExportacionConsultas modValExpoC = new ValorExportacionConsultas();
         
+        CtrlValorExpo ctrlValorExpo = new CtrlValorExpo(frmPrincipal, modValExpo, modValExpoC);
         CtrlFrame ctrlFrame = new CtrlFrame(frmPrincipal, modcPedimento, modcFraccion);
         CtrlTXT ctrlTXT = new CtrlTXT(frmPrincipal, modFraccion, modcFraccion, modPedimento, modcPedimento, modNombre, modcNombre);
         CtrlValidarSaldos ctrlValidarSaldos = new CtrlValidarSaldos(frmPrincipal, modSaldos, modcFraccion);

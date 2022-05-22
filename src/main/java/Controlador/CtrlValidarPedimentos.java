@@ -9,8 +9,6 @@ import Modelo.TXTPedimentoConsultas;
 import Vista.PanelPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
@@ -113,6 +111,16 @@ public class CtrlValidarPedimentos implements ActionListener{
             }else{
                 llenarTablaValidacionPedimentosTXTvsGlosa();
                 llenarTablaValidacionPedimentosGlosaVsTXT();
+                frmPrincipal.cmbFiltroValPedimTXT.setSelectedItem("Encontrado");
+                frmPrincipal.cmbFiltroValPedimGlosa.setSelectedItem("Encontrado");
+                frmPrincipal.cmbFiltroValPedimTXT.setSelectedItem("Seleccionar");
+                frmPrincipal.cmbFiltroValPedimGlosa.setSelectedItem("Seleccionar");
+                
+                frmPrincipal.btnLimpiarValPedimentos.setEnabled(true);
+                frmPrincipal.cmbSeleccionarAñoValPedimentos.setEnabled(false);
+                frmPrincipal.cmbSeleccionarBimestreValPed.setEnabled(false);
+                frmPrincipal.btnValidarPedimentos.setEnabled(false);
+                
             }
         }
     }
