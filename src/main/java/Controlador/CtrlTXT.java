@@ -21,7 +21,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.http.WebSocket;
 import java.text.DecimalFormat;
+import java.time.Clock;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
@@ -29,6 +31,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -69,13 +73,34 @@ public class CtrlTXT implements ActionListener, MouseListener, ItemListener {
     }
 
     public void insertarTXT() {
+        
         JFileChooser fc = new JFileChooser();
-        FileNameExtensionFilter filtro = new FileNameExtensionFilter("*.txt", "txt");
+        
+        FileNameExtensionFilter filtro = new FileNameExtensionFilter("Archivos de texto", "txt");
         fc.setFileFilter(filtro);
-        fc.showOpenDialog(null);
+        fc.setMultiSelectionEnabled(true);
+        
+        //Guardamos el resultado del cudro de dialogo
+        int result = fc.showOpenDialog(null);
+        
+        if (result == JFileChooser.CANCEL_OPTION) {
+            System.out.println("Se cancelo proceso Open dialog");
+            return;
+        }
+        
+        File[] archivos = fc.getSelectedFiles();
+        ArrayList<File> archivosSeleccionados = new ArrayList<File>();
+        archivosSeleccionados.addAll(Arrays.asList(archivos));
+        
+        for (File file : archivos) {
+            System.out.println(file.getName());
+            
+        }
+         
+        
         File archivo = fc.getSelectedFile();
         String nombreArchivo = archivo.getName();
-
+        
 
             FileReader fr;
             try {
@@ -345,15 +370,29 @@ public class CtrlTXT implements ActionListener, MouseListener, ItemListener {
         int fila = frmPrincipal.jtableConsultaTXT.getSelectedRow();
     }
     
+    public void limpiarTXTIndividual() {
+        frmPrincipal.txtIDFraccion.setText("");
+        frmPrincipal.cmbTipoAgregarFraccion.setSelectedItem("Selected");
+        frmPrincipal.cmbTipoAgregarFraccion.setEnabled(true);
+        frmPrincipal.txtFraccion.setText("");
+        frmPrincipal.txtValor.setText("");
+        frmPrincipal.txtTipoMaterial.setText("");
+        frmPrincipal.cmbSeleccionarRegimenAgregarFraccion.setSelectedItem("Selected");
+        frmPrincipal.txtValidado.setText("0");
+        frmPrincipal.cmbSeleccionarBimestreRegistro.setSelectedItem("Selected");
+        frmPrincipal.txtAño.setText("");
+        frmPrincipal.txtNombreArchivo.setText("");
+        
+    }
+    
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        CtrlFrame ctrlFrame = new CtrlFrame();
         
         if (e.getSource() == frmPrincipal.btnSeleccionarTXTInsertar) {
             insertarTXT();
             listarAño();
-            ctrlFrame.limpiar();
+            limpiarTXTIndividual();
 
         }
         if (e.getSource() == frmPrincipal.btnExportarTXT) {
@@ -399,7 +438,7 @@ public class CtrlTXT implements ActionListener, MouseListener, ItemListener {
                         frmPrincipal.btnExportarTXT.setEnabled(false);
                         frmPrincipal.btnLock.setVisible(false);
                         listarAño();
-                        ctrlFrame.limpiar();
+                        limpiarTXTIndividual();
                         //Metodo para elimianr archivo TXT
                         eliminarTXTArchivoTXT();
 

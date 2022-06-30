@@ -147,26 +147,27 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jTextField43 = new javax.swing.JTextField();
-        jTextField44 = new javax.swing.JTextField();
-        jTextField45 = new javax.swing.JTextField();
-        jTextField46 = new javax.swing.JTextField();
-        jTextField47 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
-        jTextField49 = new javax.swing.JTextField();
-        jTextField50 = new javax.swing.JTextField();
-        jTextField51 = new javax.swing.JTextField();
-        jTextField52 = new javax.swing.JTextField();
-        jTextField53 = new javax.swing.JTextField();
-        jTextField54 = new javax.swing.JTextField();
-        jTextField55 = new javax.swing.JTextField();
-        jTextField56 = new javax.swing.JTextField();
-        jTextField57 = new javax.swing.JTextField();
-        jTextField58 = new javax.swing.JTextField();
-        jTextField59 = new javax.swing.JTextField();
-        jTextField60 = new javax.swing.JTextField();
+        txtPorcentajeB1 = new javax.swing.JTextField();
+        txtValorInsumosB1 = new javax.swing.JTextField();
+        txtValorExportacionB1 = new javax.swing.JTextField();
+        txtValorExportacionB2 = new javax.swing.JTextField();
+        txtValorInsumosB2 = new javax.swing.JTextField();
+        txtPorcentajeB2 = new javax.swing.JTextField();
+        txtPorcentajeB3 = new javax.swing.JTextField();
+        txtValorInsumosB3 = new javax.swing.JTextField();
+        txtValorExportacionB3 = new javax.swing.JTextField();
+        txtValorExportacionB4 = new javax.swing.JTextField();
+        txtValorInsumosB4 = new javax.swing.JTextField();
+        txtPorcentajeB4 = new javax.swing.JTextField();
+        txtPorcentajeB5 = new javax.swing.JTextField();
+        txtValorInsumosB5 = new javax.swing.JTextField();
+        txtValorExportacionB5 = new javax.swing.JTextField();
+        txtValorExportacionB6 = new javax.swing.JTextField();
+        txtValorInsumosB6 = new javax.swing.JTextField();
+        txtPorcentajeB6 = new javax.swing.JTextField();
         btnCalcularValorExpo = new javax.swing.JButton();
         cmbSeleccionarAñoValorExpo = new javax.swing.JComboBox<>();
+        btnLimpiarValorExpo = new javax.swing.JButton();
         pnlRegistroTXT = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -1031,12 +1032,12 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jPanel10.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, 300, 50));
 
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel41.setText("Valor Insumos");
+        jLabel41.setText("Valor Exportacion");
         jLabel41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 60, 100, 50));
 
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setText("Valor Exportacion");
+        jLabel42.setText("Valor Insumos");
         jLabel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 60, 100, 50));
 
@@ -1045,81 +1046,83 @@ public class PanelPrincipal extends javax.swing.JFrame {
         jLabel43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 60, 100, 50));
 
-        jTextField43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 110, 100, 50));
+        txtPorcentajeB1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 110, 100, 50));
 
-        jTextField44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField44, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 110, 100, 50));
+        txtValorInsumosB1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 110, 100, 50));
 
-        jTextField45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField45, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, 100, 50));
+        txtValorExportacionB1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, 100, 50));
 
-        jTextField46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField46, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 100, 50));
+        txtValorExportacionB2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 160, 100, 50));
 
-        jTextField47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField47, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 160, 100, 50));
+        txtValorInsumosB2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 160, 100, 50));
 
-        jTextField48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField48, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 160, 100, 50));
+        txtPorcentajeB2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 160, 100, 50));
 
-        jTextField49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField49, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 100, 50));
+        txtPorcentajeB3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 210, 100, 50));
 
-        jTextField50.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField50, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 210, 100, 50));
+        txtValorInsumosB3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 210, 100, 50));
 
-        jTextField51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField51, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, 100, 50));
+        txtValorExportacionB3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, 100, 50));
 
-        jTextField52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField52.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField52, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 100, 50));
+        txtValorExportacionB4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 260, 100, 50));
 
-        jTextField53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField53, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, 100, 50));
+        txtValorInsumosB4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 260, 100, 50));
 
-        jTextField54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField54.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField54, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 260, 100, 50));
+        txtPorcentajeB4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB4, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 260, 100, 50));
 
-        jTextField55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField55.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField55, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, 100, 50));
+        txtPorcentajeB5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB5, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, 100, 50));
 
-        jTextField56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField56.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField56, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 310, 100, 50));
+        txtValorInsumosB5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 310, 100, 50));
 
-        jTextField57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField57.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField57, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, 100, 50));
+        txtValorExportacionB5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 310, 100, 50));
 
-        jTextField58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField58.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField58, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 100, 50));
+        txtValorExportacionB6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorExportacionB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorExportacionB6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 100, 50));
 
-        jTextField59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField59, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 360, 100, 50));
+        txtValorInsumosB6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtValorInsumosB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtValorInsumosB6, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 360, 100, 50));
 
-        jTextField60.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel10.add(jTextField60, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 360, 100, 50));
+        txtPorcentajeB6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtPorcentajeB6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.add(txtPorcentajeB6, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 360, 100, 50));
 
         btnCalcularValorExpo.setText("Calcular valor expo");
 
         cmbSeleccionarAñoValorExpo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "2020", "2021", "2022" }));
+
+        btnLimpiarValorExpo.setText("Limpiar");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -1134,7 +1137,9 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 .addComponent(cmbSeleccionarAñoValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnCalcularValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(301, 301, 301))
+                .addGap(18, 18, 18)
+                .addComponent(btnLimpiarValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(110, 110, 110))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1142,7 +1147,8 @@ public class PanelPrincipal extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCalcularValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmbSeleccionarAñoValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbSeleccionarAñoValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLimpiarValorExpo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -1511,6 +1517,7 @@ public class PanelPrincipal extends javax.swing.JFrame {
     public javax.swing.JButton btnLimpiarTXT;
     public javax.swing.JButton btnLimpiarValFracciones;
     public javax.swing.JButton btnLimpiarValPedimentos;
+    public javax.swing.JButton btnLimpiarValorExpo;
     public javax.swing.JButton btnLock;
     public javax.swing.JButton btnNuevoRegistro;
     public javax.swing.JButton btnSeleccionarTXTInsertar;
@@ -1595,24 +1602,6 @@ public class PanelPrincipal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
-    private javax.swing.JTextField jTextField47;
-    private javax.swing.JTextField jTextField48;
-    private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField50;
-    private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
-    private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
-    private javax.swing.JTextField jTextField55;
-    private javax.swing.JTextField jTextField56;
-    private javax.swing.JTextField jTextField57;
-    private javax.swing.JTextField jTextField58;
-    private javax.swing.JTextField jTextField59;
-    private javax.swing.JTextField jTextField60;
     public javax.swing.JTable jtableConsultaTXT;
     public javax.swing.JTable jtableSaldos;
     public javax.swing.JTable jtableValidarFracciones;
@@ -1631,6 +1620,12 @@ public class PanelPrincipal extends javax.swing.JFrame {
     public javax.swing.JTextField txtFraccion;
     public javax.swing.JTextField txtIDFraccion;
     public javax.swing.JTextField txtNombreArchivo;
+    public javax.swing.JTextField txtPorcentajeB1;
+    public javax.swing.JTextField txtPorcentajeB2;
+    public javax.swing.JTextField txtPorcentajeB3;
+    public javax.swing.JTextField txtPorcentajeB4;
+    public javax.swing.JTextField txtPorcentajeB5;
+    public javax.swing.JTextField txtPorcentajeB6;
     public javax.swing.JTextField txtRTB1;
     public javax.swing.JTextField txtRTB1TXT;
     public javax.swing.JTextField txtRTB2;
@@ -1670,5 +1665,17 @@ public class PanelPrincipal extends javax.swing.JFrame {
     public javax.swing.JTextField txtV5B6TXT;
     public javax.swing.JTextField txtValidado;
     public javax.swing.JTextField txtValor;
+    public javax.swing.JTextField txtValorExportacionB1;
+    public javax.swing.JTextField txtValorExportacionB2;
+    public javax.swing.JTextField txtValorExportacionB3;
+    public javax.swing.JTextField txtValorExportacionB4;
+    public javax.swing.JTextField txtValorExportacionB5;
+    public javax.swing.JTextField txtValorExportacionB6;
+    public javax.swing.JTextField txtValorInsumosB1;
+    public javax.swing.JTextField txtValorInsumosB2;
+    public javax.swing.JTextField txtValorInsumosB3;
+    public javax.swing.JTextField txtValorInsumosB4;
+    public javax.swing.JTextField txtValorInsumosB5;
+    public javax.swing.JTextField txtValorInsumosB6;
     // End of variables declaration//GEN-END:variables
 }
